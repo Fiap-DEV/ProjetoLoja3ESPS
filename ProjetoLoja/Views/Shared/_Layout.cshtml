@@ -38,7 +38,15 @@
                                 <span>Olá @User.Identity.Name</span>
                             </li>
                             <li>
-                                <a asp-controller="Usuario" asp-action="Sair"></a>
+                                <a asp-controller="Usuario" asp-action="Sair">Sair</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a asp-controller="Usuario" asp-action="Login">
+                                    Entrar
+                                    </a>
                             </li>
                         }
 
